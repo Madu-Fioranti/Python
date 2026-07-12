@@ -1,0 +1,6 @@
+texto = input("Digite algo: ")
+
+if texto.isalpha():
+    print("Você digitou apenas letras.")
+else:
+    print("O que você digitou contém números, espaços ou caracteres especiais.")
