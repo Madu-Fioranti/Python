@@ -1,0 +1,47 @@
+nome = input("Qual é o seu nome? ")
+idade = input("Quantos anos você tem? ")
+
+resposta = input("Você está matriculado em alguma universidade? ").lower()
+
+if resposta == "sim":
+
+    curso = input("Você faz qual curso? ").lower()
+
+    cursos_engenharia = [
+        "engenharia",
+        "engenharia elétrica",
+        "engenharia eletrica",
+        "engenharia mecânica",
+        "engenharia mecanica",
+        "eng",
+        "eng elétrica",
+        "eng eletrica",
+        "eng mec",
+        "eng mecânica",
+        "eng mecanica",
+        "bsi",
+        "bcc"
+    ]
+
+    if curso in cursos_engenharia:
+
+        banda = input("Então, você provavelmente curte rock. Qual é sua banda favorita? ").lower()
+
+        if banda in ["não gosto", "nao gosto", "nao quero falar", "nao curto"]:
+
+            print("Poxa, cara... você não sabe o que está perdendo.")
+            print(f"Mas agora eu sei que você se chama {nome}, tem {idade} anos, estuda {curso} e não tem um bom gosto musical. xD")
+
+        else:
+
+            print(f"Pelo visto, você é gente boa. Além de estudar {curso}, você gosta de rock.")
+            print(f"Então, você se chama {nome}, tem {idade} anos, estuda {curso} e sua banda favorita é {banda}.")
+            print("Se eu fosse real, gostaria de te conhecer... mas existe uma certa distância entre nós. Eu sou um programa e você é um humano. :c")
+            print("Espero que tenha aproveitado esse tempo comigo! ^^")
+            print("Bye bye, amigo. Vou pegar o busão interestelar")
+
+    else:
+        print("Que bacana! Espero que esteja aproveitando o período acadêmico. Fica bem! Bye bye. :P")
+
+else:
+    print("Você deveria considerar fazer faculdade. Seus horizontes podem se expandir e ainda dá para pagar meia-entrada no cinema")
