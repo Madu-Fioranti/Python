@@ -1,0 +1,4 @@
+nome = input('Qual é o seu nome?')
+msg = input('Deixe uma mensagem para o pessoal:')
+print('{} disse:{}\n'.format(nome, msg))
+print ('Python diz: belíssimo,{}, quase chorei T T'.format(nome))
